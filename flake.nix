@@ -15,6 +15,10 @@
         };
 
     in{
+      apps.${system}.default = {
+        type = "app";
+        program = "${guiApp}/bin/gui_program";
+      };
       packages.${system}.default = pkgs.buildEnv {
         name = "combinedEnv";
         paths = [ guiApp ];  # Include the packages in the environment

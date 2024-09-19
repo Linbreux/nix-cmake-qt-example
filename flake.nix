@@ -34,7 +34,7 @@
           pkgs.makeWrapper
           # Add other required Qt modules here
           coreLib
-          guiApp
+          #guiApp
         ];
         nativeBuildInputs = [ pkgs.qt5.wrapQtAppsHook ];
         shellHook = ''

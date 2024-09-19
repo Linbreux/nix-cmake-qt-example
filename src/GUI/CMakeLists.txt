@@ -6,6 +6,7 @@ project(${PACKAGE_NAME})
 
 set(SOURCE_FILES
   main.cpp
+  appCore.cpp
   qml.qrc
 )
 
